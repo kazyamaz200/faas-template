@@ -1,0 +1,21 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.2.10"
+}
+
+apply plugin: "application"
+
+mainClassName = "IndexKt"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8"
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'IndexKt'
+    }
+}
